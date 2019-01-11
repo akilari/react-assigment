@@ -8,3 +8,6 @@ node_modules
 
 # unwanted files
 .DS_Store
+
+# removed build directory
+public
