@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.btn-test {
+  height: 40px;
+  margin: 30px;
+  width: 100px;
+  display: block;
+}
+
+.selected-item {
+  float: right;
+  border: 1px solid #c9c9c9;
+}
+.users-list {
+  float: left;
+}
+.users {
+  display: flex;
+  width: 100%;
+}
+
+.text-bio {
+  height: 100px;
+  width: 400px;
+  margin: 20px;
+}
+
+.profile-pic {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin: 20px;
+}
+
+.btn-left,.btn-right {
+  background: #cccc;
+  display: inline;
+}
+.btn-left {
+  float: left;
+}
+.btn-right {
+  float: right;
+}
+.btn-list {
+  display: block;
+}
