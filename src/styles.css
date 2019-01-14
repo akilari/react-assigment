@@ -2,20 +2,23 @@
   font-family: sans-serif;
   text-align: center;
 }
+
 .btn-test {
+  display: block;
   height: 40px;
   margin: 30px;
   width: 100px;
-  display: block;
 }
 
 .selected-item {
-  float: right;
   border: 1px solid #c9c9c9;
+  float: right;
 }
+
 .users-list {
   float: left;
 }
+
 .users {
   display: flex;
   width: 100%;
@@ -23,27 +26,22 @@
 
 .text-bio {
   height: 100px;
-  width: 400px;
   margin: 20px;
+  width: 400px;
 }
 
 .profile-pic {
-  height: 250px;
-  width: 250px;
   display: block;
+  height: 250px;
   margin: 20px;
+  width: 250px;
 }
 
-.btn-left,.btn-right {
+.btn-right {
   background: #cccc;
-  display: inline;
-}
-.btn-left {
   float: left;
 }
-.btn-right {
-  float: right;
-}
+
 .btn-list {
   display: block;
 }

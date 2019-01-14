@@ -16,7 +16,7 @@ class SelectedItem extends React.Component {
             disabledState: false
         });
     }
-    static getDerivedStateFromProps(nextProps, prevState){
+    static getDerivedStateFromProps(nextProps, prevState) {
         if (nextProps.bio !== prevState.someState) {
             return { someState: nextProps.bio};
         } else {
@@ -34,12 +34,11 @@ class SelectedItem extends React.Component {
         const {profilePic,name} = this.props;
         return (
             <div className='selected-item'>
-                {<div>{name}</div>}
-                <textarea className='text-bio' value={this.state.someState} onChange={(e)=>{ this.setState({someState:e.target.value})}} disabled={this.state.disabledState} ref={this.textInput}/>
+                <div>{name}</div>
+                <textarea className='text-bio' value={this.state.someState} onChange={(e)=>{this.setState({someState:e.target.value})}} disabled={this.state.disabledState} ref={this.textInput}/>
                 <img src={profilePic} alt={name} className='profile-pic'/>
                 <div className='btn-list'>
                     <button className='btn-test btn-right' onClick={()=>this.editInput()}>Edit</button>
-                    <button className='btn-test btn-left'>Save</button>
                 </div>
             </div>
         )

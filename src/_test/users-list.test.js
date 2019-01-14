@@ -10,7 +10,7 @@ describe("<UsersList/>", () => {
     const wrapper = shallow(<UsersList/>);
     expect(wrapper.hasClass('users'));
   });
-  it (" and it has 4 values", ()=>{
+  it ("it renders 4 buttons", ()=>{
     const wrapper = shallow(<UsersList/>);
     expect(wrapper.find('button').length ==4);
   });

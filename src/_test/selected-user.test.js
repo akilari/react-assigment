@@ -10,4 +10,11 @@ describe("<SelectedItem/>", () => {
     const wrapper = shallow(<SelectedItem/>);
     expect(wrapper.exists()).toBe(true);
   });
+
+  it('check editbutton click ', () => {  
+    const UserMount = shallow(<SelectedItem />),
+          buttonClick = UserMount.find(".btn-right");
+    expect(buttonClick.length ===1);
+  });
+  
 });
