@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "http://akilari.github.io/react-assignment",
   "dependencies": {
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.5.0",

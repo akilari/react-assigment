@@ -1,15 +1,13 @@
-import SelectedItem from '../components/selected-user';
-import UsersList from '../components/users-list';
+import SelectedItem from "../components/selected-user";
 import React from 'react';
-import { expect } from 'chai';
-import { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-15';
+import Adapter from 'enzyme-adapter-react-16';
+import { shallow, configure } from 'enzyme';
 
+configure({adapter: new Adapter()});  
 
 describe("<SelectedItem/>", () => {
-    it("it renders <UsersList/> components ", () => {
-      const wrapper = shallow(<SelectedItem/>);
-      expect(wrapper.find(<UsersList/>)).to.have.lengthOf(1);
-    });
+  it("it renders <UserList/> components", () => {
+    const wrapper = shallow(<SelectedItem/>);
+    expect(wrapper.exists()).toBe(true);
   });
-  
+});

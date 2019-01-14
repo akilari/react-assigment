@@ -7,11 +7,6 @@ class SelectedItem extends React.Component {
             disabledState: true,
             someState: props.bio,
         }
-        this.props ={
-            profilePic:'',
-            name:'',
-            bio:''
-        }
         this.editInput=this.editInput.bind(this);
         this.textInput = React.createRef();
     }
@@ -22,7 +17,7 @@ class SelectedItem extends React.Component {
         });
     }
     static getDerivedStateFromProps(nextProps, prevState){
-        if ( nextProps.bio !== prevState.someState) {
+        if (nextProps.bio !== prevState.someState) {
             return { someState: nextProps.bio};
         } else {
             return null;
@@ -30,7 +25,7 @@ class SelectedItem extends React.Component {
     }
     
     componentDidUpdate(prevProps) {
-      if(prevProps.bio!==this.props.bio){
+      if (prevProps.bio!==this.props.bio){
         this.setState({someState: this.state.someState});
       }
     }
